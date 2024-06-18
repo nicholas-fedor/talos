@@ -7,7 +7,7 @@ replace (
 	github.com/coredns/coredns => github.com/siderolabs/coredns v1.11.53
 
 	// see https://github.com/mdlayher/kobject/pull/5
-	github.com/mdlayher/kobject => github.com/smira/kobject v0.0.0-20240304111826-49c8d4613389
+	github.com/mdlayher/kobject => github.com/smira/kobject 19ca17470d7d
 
 	// Use nested module.
 	github.com/siderolabs/talos/pkg/machinery => ./pkg/machinery
@@ -25,16 +25,16 @@ replace (
 
 // Kubernetes dependencies sharing the same version.
 require (
-	k8s.io/api v0.30.1
-	k8s.io/apimachinery v0.30.1
-	k8s.io/apiserver v0.30.1
-	k8s.io/client-go v0.30.1
-	k8s.io/component-base v0.30.1
-	k8s.io/cri-api v0.30.1
-	k8s.io/kube-scheduler v0.30.1
-	k8s.io/kubectl v0.30.1
-	k8s.io/kubelet v0.30.1
-	k8s.io/pod-security-admission v0.30.1
+	k8s.io/api v0.30.2
+	k8s.io/apimachinery v0.30.2
+	k8s.io/apiserver v0.30.2
+	k8s.io/client-go v0.30.2
+	k8s.io/component-base v0.30.2
+	k8s.io/cri-api v0.30.2
+	k8s.io/kube-scheduler v0.30.2
+	k8s.io/kubectl v0.30.2
+	k8s.io/kubelet v0.30.2
+	k8s.io/pod-security-admission v0.30.2
 )
 
 require (
@@ -44,9 +44,9 @@ require (
 	github.com/Azure/azure-sdk-for-go/sdk/security/keyvault/azcertificates v1.1.0
 	github.com/Azure/azure-sdk-for-go/sdk/security/keyvault/azkeys v1.1.0
 	github.com/alexflint/go-filemutex v1.3.0
-	github.com/aws/aws-sdk-go-v2/config v1.27.18
-	github.com/aws/aws-sdk-go-v2/feature/ec2/imds v1.16.5
-	github.com/aws/aws-sdk-go-v2/service/kms v1.32.3
+	github.com/aws/aws-sdk-go-v2/config v1.27.19
+	github.com/aws/aws-sdk-go-v2/feature/ec2/imds v1.16.6
+	github.com/aws/aws-sdk-go-v2/service/kms v1.33.1
 	github.com/aws/smithy-go v1.20.2
 	github.com/beevik/ntp v1.4.3
 	github.com/benbjohnson/clock v1.3.5 // project archived on 2023-05-18
@@ -54,13 +54,13 @@ require (
 	github.com/cenkalti/backoff/v4 v4.3.0
 	github.com/containerd/cgroups/v3 v3.0.3
 	github.com/containerd/containerd/api v1.8.0-rc.2
-	github.com/containerd/containerd/v2 v2.0.0-rc.2
+	github.com/containerd/containerd/v2 v2.0.0-rc.3
 	github.com/containerd/errdefs v0.1.0
 	github.com/containerd/platforms v0.2.1
 	github.com/containerd/typeurl/v2 v2.1.1
-	github.com/containernetworking/cni v1.2.0
-	github.com/containernetworking/plugins v1.5.0
-	github.com/coredns/coredns v1.11.2
+	github.com/containernetworking/cni v1.2.1
+	github.com/containernetworking/plugins v1.5.1
+	github.com/coredns/coredns v1.11.3
 	github.com/coreos/go-iptables v0.7.0
 	github.com/cosi-project/runtime v0.4.5
 	github.com/distribution/reference v0.6.0
@@ -78,7 +78,7 @@ require (
 	github.com/godbus/dbus/v5 v5.1.0
 	github.com/golang/mock v1.6.0
 	github.com/google/go-cmp v0.6.0
-	github.com/google/go-containerregistry v0.19.1
+	github.com/google/go-containerregistry v0.19.2
 	github.com/google/go-tpm v0.9.1
 	github.com/google/nftables v0.2.0
 	github.com/google/uuid v1.6.0
@@ -106,7 +106,7 @@ require (
 	github.com/mdlayher/netlink v1.7.2
 	github.com/mdlayher/netx v0.0.0-20230430222610-7e21880baee8
 	github.com/mdp/qrterminal/v3 v3.2.0
-	github.com/miekg/dns v1.1.59
+	github.com/miekg/dns v1.1.61
 	github.com/nberlee/go-netstat v0.1.2
 	github.com/opencontainers/go-digest v1.0.0
 	github.com/opencontainers/image-spec v1.1.0
@@ -116,19 +116,19 @@ require (
 	github.com/pin/tftp/v3 v3.1.0
 	github.com/pmorjan/kmod v1.1.1
 	github.com/prometheus/procfs v0.15.1
-	github.com/rivo/tview v0.0.0-20240524063012-037df494fb76
+	github.com/rivo/tview 23476fa0bab2
 	github.com/rs/xid v1.5.0
 	github.com/ryanuber/columnize v2.1.2+incompatible
 	github.com/ryanuber/go-glob v1.0.0
-	github.com/safchain/ethtool v0.3.0
-	github.com/scaleway/scaleway-sdk-go v1.0.0-beta.27
+	github.com/safchain/ethtool v0.4.0
+	github.com/scaleway/scaleway-sdk-go v1.0.0-beta.28
 	github.com/siderolabs/crypto v0.4.4
 	github.com/siderolabs/discovery-api v0.1.4
 	github.com/siderolabs/discovery-client v0.1.9
 	github.com/siderolabs/gen v0.5.0
 	github.com/siderolabs/go-api-signature v0.3.2
 	github.com/siderolabs/go-blockdevice v0.4.7
-	github.com/siderolabs/go-blockdevice/v2 v2.0.0-20240610010119-f4a4030394f4
+	github.com/siderolabs/go-blockdevice/v2 d9313ea908f3
 	github.com/siderolabs/go-circular v0.2.0
 	github.com/siderolabs/go-cmd v0.1.1
 	github.com/siderolabs/go-copy v0.1.0
@@ -149,7 +149,7 @@ require (
 	github.com/siderolabs/net v0.4.0
 	github.com/siderolabs/siderolink v0.3.9
 	github.com/siderolabs/talos/pkg/machinery v1.8.0-alpha.0.0.20240521134552-e1711cd3c985
-	github.com/spf13/cobra v1.8.0
+	github.com/spf13/cobra v1.8.1
 	github.com/spf13/pflag v1.0.5
 	github.com/stretchr/testify v1.9.0
 	github.com/u-root/u-root v0.14.0
@@ -174,7 +174,7 @@ require (
 	google.golang.org/grpc v1.64.0
 	google.golang.org/protobuf v1.34.2
 	gopkg.in/yaml.v3 v3.0.1
-	k8s.io/klog/v2 v2.120.1
+	k8s.io/klog/v2 v2.130.0
 	kernel.org/pub/linux/libs/security/libcap/cap v1.2.70
 	sigs.k8s.io/hydrophone v0.6.1-0.20240611183045-ec6fa911eb8b
 	sigs.k8s.io/yaml v1.4.0
