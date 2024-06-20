@@ -58,3 +58,17 @@ When you are all done, remove the cluster:
 ```bash
 talosctl cluster destroy
 ```
+
+### Delete the Cluster from `talosctl`'s Default Configuration (talosconfig)
+
+Set the current context to a blank context:
+
+```bash
+talosctl config context ""
+```
+
+Remove the `talos-default` context:
+
+```bash
+talosctl config remove talos-default
+```
