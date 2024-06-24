@@ -98,7 +98,22 @@ To view the logs of a container:
 
 ## Cleaning Up
 
-To cleanup, run:
+If following this guide, then the current cluster `current context` should be
+`talos-default`.
+
+You can check this by using the following command:
+
+```bash
+talosctl config contexts
+```
+
+If `talos-default` is not the current context, then set it via the following:
+
+```bash
+talosctl config context talos-default
+```
+
+To destroy the `talos-default` cluster:
 
 ```bash
 talosctl cluster destroy
@@ -130,6 +145,16 @@ To switch between clusters, use `--context` flag:
 ```bash
 talosctl --context cluster2 version
 kubectl --context admin@cluster2 get nodes
+```
+
+Alternatively, use `talosctl config context <context>` to set the current
+context.
+
+If you have destroyed `cluster2` and wish to manage another cluster, such as
+`talos-default`:
+
+```bash
+talosctl config context talos-default
 ```
 
 ## Running Talos in Docker Manually
